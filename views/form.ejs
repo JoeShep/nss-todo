@@ -1,0 +1,26 @@
+<form action="/todo" method="post">
+  <div class="form_item">
+    <label for="task">Todo Item</label>
+    <input type="text" name="task">
+  </div>
+
+  <div class="form_item">
+    <label for="due_date">Due Date</label>
+    <input type="date" name="due_date">
+  </div>
+
+  <div class="form_item">
+    <label for="description">Task Description</label>
+    <textarea name="description"></textarea>
+  </div>
+
+  <div class="form_item">
+    <label for="priority">Priority Level</label>
+    <input id="priority" class="priority" type="range" min="1" max="10" value="0" name="priority" oninput="priorityDisplay.value=priority.value">
+    <output for="priority" class="priorityDisplay" name="priorityDisplay">0</output>
+  </div>
+
+  <div class="button">
+    <button type="submit">Save Task</button>
+  </div>
+</form>
